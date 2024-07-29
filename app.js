@@ -5,7 +5,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   host: "smtp.gmail.com",
   port: 587,
-  secure: false, // Use `true` for port 465, `false` for all other ports
+  secure: false, 
   auth: {
     user: "digvijaymahadikjob@gmail.com",
     pass: "jlxs ftzl qpum zvak",
@@ -14,13 +14,13 @@ const transporter = nodemailer.createTransport({
 
 const mailOptions ={
   from: {
-    name: 'Ishant Nimje 👻',
+    
     address:'digvijaymahadikjob@gmail.com',
-  }, // sender address
-  to: ["digvijay.mahadik2002@gmail.com"], // list of receivers
-  subject: "Send email using nodemailer and gmail ✔", // Subject line
-  text: "Hello world?", // plain text body
-  html: "<h2>Hello world?</h2>", // html body
+  }, 
+  to: ["digvijay.mahadik2002@gmail.com"], 
+  subject: "Send email using nodemailer and gmail ✔", 
+  text: "Hello world?", 
+  html: "<h2>Hello world?</h2>", 
   attachments: [
     {
       filename: 'raj.pdf',
